@@ -1,0 +1,340 @@
+
+*.work-sans-uniquifier {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+  }
+
+body {
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+
+.top-navbar {
+    background: #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 20px;
+    font-size: 14px;
+    color: #333;
+}
+
+.top-navbar .brands img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.account-links a {
+    text-decoration: none;
+    color: grey;
+    margin-left: 10px;
+}
+
+
+.main-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: white;
+}
+
+.logo img {
+    height: 40px;
+    margin-top: 15px;
+}
+
+.nav-links {
+    display: flex;
+    padding: 0;
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.right-links a {
+    margin-left: 15px;
+    margin-right:20px ;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.right-links{
+    display: flex;
+    align-items: center;
+}
+
+.carrello{
+    background-color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrello img{
+    height: 24px;
+}
+
+
+.brands {
+    display: flex;
+}
+
+
+
+.corsair{
+    width: 98px;
+    border-right: 1px solid lightgrey;
+}
+
+ .drop{
+    margin: 0px 10px 0px 10px;
+    border-right: 1px solid lightgrey;
+}
+
+ prova modifica
+#accedi{
+    border-right: 1px solid black;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+#creare{
+font-size: 12px;
+}
+
+#it{
+    font-size: 12px;
+    margin-right: 10px;
+    color:grey;
+}
+
+#accessibilita{
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.bloccoprincipale {
+    display: flex;
+    margin-top: 20px;
+    width: 100vw;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.immaginesovrapposta img {
+    width: 900px;
+    height: auto;
+    border-radius: 10px;;
+    
+}
+
+.immaginesovrapposta{
+    position: relative;
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: white;
+    background:rgb(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay h1{
+    margin-bottom: 10px;
+    font-size: 60px;
+    padding-left: 30px;
+    margin: 20px;
+}
+
+.overlay h2{
+    font-size: 20px;
+    text-align: center;
+}
+
+.overlay2{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: black;
+    background:rgb(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.overlay2 h1 {
+    font-size:60px;
+    text-align: left;
+    margin:20px;
+    padding-left:30px;
+}
+
+
+
+.overlay2 h2{
+    font-size:20px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: #204cfe;
+    border-radius: 5px;
+
+}
+
+.btn:hover{
+    background-color: #1231ac;
+    transition: .2s ease-out;
+}
+
+.footer{
+    padding: 100px;
+}
+.contenitorefooter{
+    display: flex;
+    justify-content: space-around;
+    max-width: auto;
+    margin: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.azienda, .supporto, .business, .connettiti{
+    margin: 40px 10px;
+    font-size: 20px;
+    color: var(--charcoal);
+}
+
+.azienda h2, .supporto h2, .business h2, .connettiti h2, .connettiti, #esempio{
+    color: #646464;
+}
+
+
+
+.connettiti a{
+    padding: 5px;
+}
+
+.connettiti img{
+    height: 50px;
+    width: 50px;
+}
+
+.copyright{
+    display: flex;
+    width: 140px;
+    padding: 20px;
+    margin: 0px;
+}
+
+
+.footersecondario{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    color: #646464;
+    font-size: 13px;
+}
+
+.footersecondario a{
+    text-decoration: none;
+    color: #646464;
+    padding: 15px;
+    font-size: 13px;
+}
+
+#esempio{
+    display: flex;
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 25px;
+    margin: 15px 0px;
+    border: 2px solid lightgrey;
+    font-size: 15px;
+    width: 250px;
+}
+
+
+@media(max-width: 768px){
+    .top-navbar{
+        display: none;
+    }
+    
+    .main-navbar .nav-links, .right-links a{
+        display: none;
+    }
+
+    .overlay.btn{
+        position: absolute;
+    }
+
+    .right-links button{
+        height: 20px;
+        width: 40px;
+        margin-left: 100px;
+    }
+
+    .bloccoprincipale img{
+        height: 700px;
+        width: 490px;
+        margin-bottom: 30px;
+    }
+
+    .bloccoprincipale{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
+    .main-navbar .logo{
+        margin-right: 100px;
+    }
+
+    .overlay h1, .overlay2 h1{
+        font-size: 40px;
+        text-align: center;
+        
+    }
+    
+    .overlay h2, .overlay2 h2{
+        font-size: 18px;
+        text-align: center;
+    } 
+
+    .overlay, .overlay2{
+        left: 10%;
+        bottom: 60%;
+        top: 0%;
+        text-align: center;
+    }
+    
+
+    }
+    
+
+
