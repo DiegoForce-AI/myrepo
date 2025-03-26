@@ -302,60 +302,74 @@ font-size: 12px;
 }
 
 
-@media(max-width: 768px){
-    .top-navbar{
+@media (max-width: 768px) {
+    .top-navbar {
         display: none;
     }
     
-    .main-navbar .nav-links, .right-links a{
+    .main-navbar .nav-links, .right-links a {
         display: none;
     }
 
-    .overlay.btn{
-        position: absolute;
+    .logo img{
+        margin: 0px;
     }
 
-    .right-links button{
-        height: 20px;
+        
+    .right-links button  {
+        display: flex;
+        height: 10px;
         width: 40px;
         margin-left: 100px;
+        align-items: center;
     }
 
-    .bloccoprincipale img{
-        height: 700px;
-        width: 490px;
-        margin-bottom: 30px;
-    }
-
-    .bloccoprincipale{
+    .bloccoprincipale, .secondoblocco {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
-
-    
-    .main-navbar .logo{
-        margin-right: 100px;
+    .bloccoprincipale img, .secondoblocco img {
+        width: 100%;
+        max-width: 400px;
+        height: 450px;
+        margin-bottom: 10px;
     }
 
-    .overlay h1, .overlay2 h1{
-        font-size: 40px;
+    .overlay, .overlay2, .overlay3, .overlay4 {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        margin: 0 auto;
+        padding: 10px;
         text-align: center;
-        
+        width: 90%;
     }
-    
-    .overlay h2, .overlay2 h2{
-        font-size: 18px;
-        text-align: center;
-    } 
 
-    .overlay, .overlay2{
-        left: 10%;
-        bottom: 60%;
-        top: 0%;
+    .overlay h1, .overlay2 h1, .overlay3 h1, .overlay4 h1 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .overlay h2, .overlay2 h2, .overlay3 h2, .overlay4 h2 {
+        font-size: 15px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+    .contenitorefooter {
+        flex-direction: column;
         text-align: center;
     }
-    
 
+    .footersecondario {
+        flex-direction: column;
+        gap: 10px;
     }
-    
+}
+
+
