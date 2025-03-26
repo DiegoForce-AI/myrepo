@@ -106,7 +106,7 @@ body {
     border-right: 1px solid lightgrey;
 }
 
- prova modifica
+
 #accedi{
     border-right: 1px solid black;
     padding-right: 10px;
@@ -128,7 +128,7 @@ font-size: 12px;
     margin-right: 10px;
 }
 
-.bloccoprincipale {
+.bloccoprincipale, .secondoblocco {
     display: flex;
     margin-top: 20px;
     width: 100vw;
@@ -139,38 +139,40 @@ font-size: 12px;
 }
 
 
-.immaginesovrapposta img {
-    width: 900px;
-    height: auto;
+.immaginesovrapposta img, .immaginesovrapposta2 img{
+    width: 925px;
+    height: 892px;
     border-radius: 10px;;
-    
 }
 
-.immaginesovrapposta{
+
+
+.immaginesovrapposta, .immaginesovrapposta2{
     position: relative;
 
 }
 
-.overlay{
+.overlay, .overlay3{
     position: absolute;
     top: 0%;
     left: 0%;
     color: white;
     background:rgb(0, 0, 0, 0);
-    padding: 20px;
+    padding: 48px;
     border-radius: 10px;
 }
 
-.overlay h1{
-    margin-bottom: 10px;
+.overlay h1, .overlay3 h1{
     font-size: 60px;
-    padding-left: 30px;
-    margin: 20px;
+    text-align: left;
+    margin: 0px;
 }
 
 .overlay h2{
     font-size: 20px;
-    text-align: center;
+    text-align: left;
+    margin-top: 24px;
+    margin-bottom: 0px;
 }
 
 .overlay2{
@@ -179,15 +181,25 @@ font-size: 12px;
     left: 0%;
     color: black;
     background:rgb(0, 0, 0, 0);
-    padding: 20px;
+    padding: 48px;
     border-radius: 10px;
 }
 
-.overlay2 h1 {
+.overlay4{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    color: white;
+    background:rgb(0, 0, 0, 0);
+    padding: 48px;
+    border-radius: 10px;
+}
+
+.overlay2 h1, .overlay4 h1 {
     font-size:60px;
     text-align: left;
-    margin:20px;
-    padding-left:30px;
+    margin: 0px;
+    
 }
 
 
@@ -195,20 +207,29 @@ font-size: 12px;
 .overlay2 h2{
     font-size:20px;
     text-align: left;
-    margin-bottom: 50px;
+    margin-top: 24px
 }
 
-.btn {
+ .overlay4 h2, .overlay3 h2{
+    font-size:20px;
+    text-align: left;
+    color: white;
+}
+
+.btn, .btn2 {
+    position: relative;
     display: inline-block;
     text-decoration: none;
     padding: 10px 20px;
     color: white;
     background-color: #204cfe;
     border-radius: 5px;
+    margin-top:20px;
+    
 
 }
 
-.btn:hover{
+.btn:hover, .btn2:hover{
     background-color: #1231ac;
     transition: .2s ease-out;
 }
@@ -225,8 +246,8 @@ font-size: 12px;
 }
 
 .azienda, .supporto, .business, .connettiti{
-    margin: 40px 10px;
-    font-size: 20px;
+    margin: 40px 0px;
+    font-size: 14px;
     color: var(--charcoal);
 }
 
@@ -241,8 +262,8 @@ font-size: 12px;
 }
 
 .connettiti img{
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .copyright{
