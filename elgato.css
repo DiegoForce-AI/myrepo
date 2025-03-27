@@ -333,8 +333,7 @@ font-size: 12px;
 
     .bloccoprincipale img, .secondoblocco img {
         width: 100%;
-        max-width: 400px;
-        height: 450px;
+        height: 70%;
         margin-bottom: 10px;
     }
 
